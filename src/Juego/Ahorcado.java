@@ -145,11 +145,11 @@ public class Ahorcado {
 			System.out.println("|");
 			System.out.println("|_______________________");
 			
-	
-			break;
-		case 0:
 			System.out.println("Has perdido");
 			System.out.println("La palabra secreta era: " + palabraSecreta);
+			break;
+		
+		
 
 		default:
 			break;
@@ -185,7 +185,7 @@ public class Ahorcado {
 		}
 		
 		//System.out.println("");
-		System.out.println("\n¡Palabra Secreta!");
+		System.out.println("\n�Palabra Secreta!");
 		//Imprimir los aciertos
 		for (int i = 0; i < vAciertos.length; i++) {
 			System.out.print(vAciertos[i]+ " ");
@@ -245,7 +245,7 @@ public class Ahorcado {
 			System.out.println("\nDime una letra");
 			letra = leer.next();
 			
-			//2ª Comprobar si la letra está en la palabra
+			//2ª Comprobar si la letra esta� en la palabra
 			vidas = comprobarLetraIntroducida( vidas, letra, vPalabraSecreta, vAciertos,vFallos);
 			//3ª Dibujar muñeco
 			dibujarMuneco(vidas,palabraSecreta);
